@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profil Utilisateur</title>
+</head>
+<body>
+<h2>Profil Google</h2>
+<img th:src="${picture}" width="100"/>
+<p>Nom :khadija
+
+<p>Email :khadijaaziz670@gmail.com
+
+<form th:action="@{/logout}" method="post">
+    <button type="submit" style="background:none; border:none; color:blue; text-decoration:underline; cursor:pointer;">
+        Se déconnecter
+    </button>
+</form>
+</body>
+</html>
